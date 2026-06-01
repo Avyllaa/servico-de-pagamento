@@ -1,15 +1,49 @@
 # Serviço de Pagamento
 
-Projeto simples com a classe `ServicoDePagamento` e testes usando Mocha e Node `assert`.
+Projeto desenvolvido para a disciplina de Automação de Testes de Software.
 
-Instalação e execução dos testes:
+## Funcionalidades
+
+* Realizar pagamentos.
+* Armazenar pagamentos em uma lista.
+* Classificar pagamentos automaticamente:
+
+  * "cara" para valores maiores que 100.
+  * "padrão" para valores menores ou iguais a 100.
+* Consultar o último pagamento realizado.
+
+## Tecnologias utilizadas
+
+* JavaScript (Node.js)
+* Mocha
+* Node Assert
+
+## Estrutura do Projeto
+
+```text
+src/
+ └── ServicoDePagamento.js
+
+test/
+ └── servicoDePagamento.test.js
+```
+
+## Instalação
 
 ```bash
 npm install
+```
+
+## Execução dos testes
+
+```bash
 npm test
 ```
 
-Arquivos principais:
+## Resultado esperado
 
-- `src/ServicoDePagamento.js` - implementação da classe
-- `test/servicoDePagamento.test.js` - testes com Mocha
+Todos os testes devem ser executados com sucesso:
+
+```text
+5 passing
+```
