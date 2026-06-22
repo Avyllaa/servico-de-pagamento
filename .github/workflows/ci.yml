@@ -2,16 +2,15 @@ name: CI
 
 on:
   push:
-    branches: ['**']
   workflow_dispatch:
   schedule:
-    # Exemplo: execução semanal (ajuste conforme necessário)
     - cron: '0 6 * * 1'
 
 jobs:
   test:
     name: Run tests and upload reports
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
@@ -38,3 +37,4 @@ jobs:
         with:
           name: test-report
           path: reports/**
+          
