@@ -4,11 +4,13 @@
   "description": "Serviço de pagamento com métodos de pagar e consultar último pagamento",
   "main": "src/ServicoDePagamento.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test:report": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./reports/junit.xml"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.0.0"
   }
 }
